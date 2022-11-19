@@ -1,5 +1,7 @@
   /* Homework styling */
 .skip {
+    /* color:black; */
+    color:black;
     background: white;
     left: 0;
     padding: 6px;
@@ -11,6 +13,8 @@
     }
     
 .skip:focus {
+    /* color: black; */
+    color: black;
       top: 20px;
     } 
 
