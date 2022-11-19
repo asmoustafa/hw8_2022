@@ -1,0 +1,163 @@
+  /* Homework styling */
+.skip {
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+    }
+    
+.skip:focus {
+      top: 20px;
+    } 
+
+  a {
+      color: white;
+      text-decoration-line: none;
+  }
+
+  /* use a to style the active specifically with the anchor tag */
+a:hover, a:focus, .active a{
+      /* text-decoration: underline; */
+      border-bottom: 2px solid white;
+      font-weight: bold;
+      
+  }
+  a:visited {
+      color: white;
+  }
+
+    header {
+        background-color: #2b2b2b;
+        border-bottom: 3px solid #373737;
+        margin-bottom: 50px;
+    }
+
+    /*  sets header to flex styling */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_logo {
+        margin-left: 10px;
+        height: 100px;
+        width: 75px;
+    }
+
+  h1 {
+      font-family: 'Times New Roman', 'sans serif', Times;
+      font-weight: bold;
+      color: white;
+      font-size: 35px;
+      text-align: center;
+      padding: 20px 0;
+  }
+
+  .header_title {
+      text-align: center; 
+
+  }
+
+  /* .nav_item{
+
+  } */
+
+  .grid {
+      display: grid;
+      border: solid 5px #000000;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto;
+      width: 75%;
+      justify-content: center;
+      margin: auto;
+
+  }
+
+
+  .introphoto {
+      height: 100%;
+  }
+
+  .background-img {
+    background-attachment: fixed; /* Parallax effect */     
+    background-position: center;  /* Parallax effect */
+    background-image: "images/background_img.jpeg";
+    background-repeat: no-repeat; /* Parallax effect */
+    background-size: cover;       /* Parallax effect */
+    /* color: white; */
+    height: 400px;                /* Parallax effect */
+  }
+  p {
+      margin: 10px;
+      padding: 10px;
+      /* border: solid 5px #000000; */
+  }
+
+
+  h2 {
+      text-align: center;
+      font-size: 25px;
+      padding: 25px 0px;
+  }
+
+    /* Navbar section */
+
+  .nav_links{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+  }
+
+  nav li {
+      padding-right: 20px;
+      font-size: 20px;
+      margin-bottom: 15px;
+  }
+
+
+
+  
+
+
+@media all and (min-width: 700px) {
+    .nav_links{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+
+@media all and (min-width: 900px) {
+    /* puts elements in header side by side */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header_title {
+        margin-left: 20px;
+    }
+
+    nav li {
+        margin-bottom: 15px;
+    }
+
+
+}
+
+
+
+
+
+  /* @media all and ([prefers-reduced-motion: reduce) {
+    specific query {
+    animation: none;
+    }
+  } */
